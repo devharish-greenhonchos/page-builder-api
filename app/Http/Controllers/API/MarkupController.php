@@ -15,7 +15,6 @@ class MarkupController extends Controller
      */
     public function index()
     {
-        return response()->json(['message' => 'Laravel is working'], 200);
         try {
             $markups = Markup::all();
             return response()->json(['data' => $markups], 200);
